@@ -79,7 +79,9 @@ h2 {
     letter-spacing: 31px;
     animation: fadeIn 3s ease-in 1s both;
 }
-
+    .sec {
+        margin-top: -90px;  /* Adjust this value: -20px for subtle, -50px for more shift. Negative pulls it up. */
+    }
 
 @media (max-width: 768px) {
     /* Body and general adjustments */
@@ -163,3 +165,4 @@ h2 {
         scroll-behavior: 6;  /* Slower scroll for better reading */
     }
 }
+
