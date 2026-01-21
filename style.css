@@ -73,7 +73,7 @@ h2 {
 
 .message {
     margin-top: 30px;
-    font-size: 35px;
+    font-size: 32px;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     letter-spacing: 31px;
@@ -165,4 +165,5 @@ h2 {
         scroll-behavior: 6;  /* Slower scroll for better reading */
     }
 }
+
 
