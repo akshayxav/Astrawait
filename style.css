@@ -80,16 +80,86 @@ h2 {
     animation: fadeIn 3s ease-in 1s both;
 }
 
+
 @media (max-width: 768px) {
-    .countdown {
-        display: block;
-        margin: 10px 0;
-    }
-    .title {
-        font-size: 50px;
-    }
-    /* Ensure background remains centered on small screens */
+    /* Body and general adjustments */
     body {
+        padding: 10px;  /* Reduce padding for more space */
         background-position: center center;
+        box-sizing: border-box;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        padding: 5px 10px;  /* Smaller padding */
+    }
+    .logo-img {
+        width: 40px;  /* Shrink logo size (adjust as needed) */
+        height: auto;
+    }
+    .sec {
+        margin-top: -250px;  /* Adjust this value: -20px for subtle, -50px for more shift. Negative pulls it up. */
+    }
+    /* Container and layout */
+    .container {
+        padding: 0 10px;
+        flex-direction: column;  /* Stack elements vertically on mobile */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Title */
+    .title {
+        font-size: 48px;  /* Much smaller from 50px */
+        letter-spacing: 4px;  /* Reduced for mobile */
+        margin-bottom: 10px;
+    }
+
+    /* H2 subtitle */
+    h2 {
+        font-size: 14px;  /* Smaller from default */
+        margin-bottom: 15px;
+    }
+
+    /* Countdown boxes */
+    .countdown {
+        display: inline-block;
+        margin: 0 3px;  /* Tighter margins */
+        padding: 5px;  /* Reduced padding */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        animation: pulse 2s infinite;
+        font-size: 0.7em;  /* Scales the whole box down */
+        min-width: 50px;  /* Prevent boxes from being too narrow */
+    }
+
+    /* Countdown time (numbers) */
+    .time {
+        font-size: 1.5em;  /* Very small from 3em – adjust to 1.2em if still too big */
+        font-weight: bold;
+    }
+
+    /* Countdown labels */
+    .label {
+        font-size: 0.8em;  /* Small from 1.2em */
+        margin-top: 5px;
+    }
+
+    /* Message */
+    .message {
+        margin-top: 20px;
+        font-size: 18px;  /* Smaller from 35px */
+        letter-spacing: 8px;  /* Reduced for mobile */
+        animation: fadeIn 1.5s ease-in 1s both;
+    }
+
+    /* Fixed marquee at bottom */
+    div[style*="position: fixed"] {
+        padding: 3px 0;  /* Reduce padding */
+    }
+    marquee {
+        font-size: 10px;  /* Much smaller for mobile readability */
+        scroll-behavior: 6;  /* Slower scroll for better reading */
     }
 }
