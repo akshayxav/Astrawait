@@ -1,5 +1,5 @@
 // Set the date we're counting down to (New Year's Eve 2024)
-const countDownDate = new Date("Jan 24, 2026 00:12:00").getTime();
+const countDownDate = new Date("Jan 24, 2026 12:00:00").getTime();
 
 // Update the countdown every 1 second
 const x = setInterval(function() {
@@ -27,6 +27,7 @@ const x = setInterval(function() {
         document.querySelector(".container").innerHTML = "<h1>Happy New Year!</h1><p>Time to celebrate!</p>";
     }
 }, 1000);
+
 
 
 
