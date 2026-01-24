@@ -24,9 +24,10 @@ const x = setInterval(function() {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector(".container").innerHTML = "<h1>Happy New Year!</h1><p>Time to celebrate!</p>";
+        document.querySelector(".container").innerHTML = "<h1>REGISTRATION STARTS SOON</h1><p>25th January</p>";
     }
 }, 1000);
+
 
 
 
